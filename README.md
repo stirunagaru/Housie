@@ -20,13 +20,13 @@
 
 ###  Inputs:
 * Number range: (1-n) default 1-90
-* Number of players: N – default 2
+* Number of players: N â€“ default 2
 * Tickets Size: N rows and M cols:  default: 3*9
-* Game starts: Enter “N” / “Q“ to generate a number or quit game.
+* Game starts: Enter â€œNâ€ / â€œQâ€œ to generate a number or quit game.
 
-*Singleton Pattern* – As we need only one Dealer to start the game and moderate it. We can restrict creation of multiple moderator objects in the application by following Singleton Pattern.
+*Singleton Pattern* â€“ As we need only one Dealer to start the game and moderate it. We can restrict creation of multiple moderator objects in the application by following Singleton Pattern.
 
-*Observer Pattern* – To create an interaction between the dealer and n-players, as dealer resets the status and must notifies the players to respond for the changes. Hence, we can say that Players are the observers here.
+*Observer Pattern* â€“ To create an interaction between the dealer and n-players, as dealer resets the status and must notifies the players to respond for the changes. Hence, we can say that Players are the observers here.
 
 ### Package Structure:
  
@@ -39,8 +39,8 @@
 * This interface has two method declarations:
 
 ```java
-	void setId(int id); // to set the TicketId.
-	void setTicketValue(int[][] ticket); // To set the ticket values.
+   void setId(int id); // to set the TicketId.
+   void setTicketValue(int[][] ticket); // To set the ticket values.
 ```
 
 **HousieTicket:**  HousieTicket is the implementation of Ticket Interface. It implements the method setId and setTicketValue
@@ -48,7 +48,7 @@
 ```java
     private int id;					// ticketId
     private int[][] ticket;		// housieTicket
-    private int[] numbersEachRow;// numbers per each row – user input
+    private int[] numbersEachRow;// numbers per each row â€“ user input
     private int totalNumbers;    // total numbers in the generated ticket
     private int matchedNums;		// Announced Numbers matched by dealer
 ````
@@ -122,7 +122,7 @@ Algorithm:
 
 	o	Acquire the writeLock ( only one thread can have a writeLock)
 	o	Announce a number
-	o	Reset all player’s status to false
+	o	Reset all playerâ€™s status to false
 	o	Unlocks the writeLock.
 	o	Sleeps until all the players finished updating the status to true.
 	o	Repeat.
@@ -157,10 +157,10 @@ This is the driver class that gathers information and instantiates all the objec
 *	And Wait until the all the threads die gracefully.
 
 ## Assumptions:
-*	Number players: 2
+*	Minimum number players required to play: 2
 *	User should provide the non-empty numbers in each row.
 *	Max N in the game should be greater than 20 (for a valid game)
-*   Ticket values should be more than Number of rows*cols 
+*	Ticket values should be more than Number of rows*cols 
 * 	Total count of visible numbers should be greater than or >= 5 to get all kinds of Winning Combinations.
 *	All the values in the ticket are arranged in the ascending order from left-> right and top -> bottom for easier search using an algorithm.
 
