@@ -1,0 +1,103 @@
+,--.  ,--.                          ,--.
+|  '--'  |  ,---.  ,--.,--.  ,---.  `--'  ,---.  
+|  .--.  | | .-. | |  ||  | (  .-'  ,--. | .-. : 
+|  |  |  | ' '-' ' '  ''  ' .-'  `) |  | \   --. 
+`--'  `--'  `---'   `----'  `----'  `--'  `----' 
+
+
+
+
+>> Enter the number of players participate in the game (greater than 1)
+2
+>> Enter the maximum number(n) in the ticket with range(1-n) where n is greater than 9
+30
+>> Enter number of rows on the ticket, between (1-5)
+3
+>> Enter number of columns for the tickets, between (6-10)
+9
+>> Enter the number of non empty cells for each row, between (1-9)
+5
+Player#1 Joined the Contest
+ Housie Player ID: Player#1
+ Ticket ID: 1
+|===================================|
+|   |  4|  9|   | 15|   | 22|   | 28|
+|===================================|
+|   |   |   | 13| 16|   | 23| 26| 29|
+|===================================|
+|  3|  6|   | 14| 17|   |   |   | 30|
+|===================================|
+Matched::0
+Mathced Rows::[0, 0, 0]
+
+Player#2 Joined the Contest
+ Housie Player ID: Player#2
+ Ticket ID: 2
+|===================================|
+|   |  4|  8|   |   | 18| 22|   | 28|
+|===================================|
+|  2|   |   | 13|   |   | 23| 26| 29|
+|===================================|
+|   |   | 11| 14|   | 21| 24|   | 30|
+|===================================|
+Matched::0
+Mathced Rows::[0, 0, 0]
+
+
+
+
+,--.              ,--.   ,--.           ,------.  ,--.                     
+|  |     ,---.  ,-'  '-. |  |  ,---.    |  .--. ' |  |  ,--,--. ,--. ,--.  
+|  |    | .-. : '-.  .-' `-'  (  .-'    |  '--' | |  | ' ,-.  |  \  '  /  
+|  '--. \   --.   |  |        .-'  `)   |  | --'  |  | \ '-'  |   \   ' 
+`-----'  `----'   `--'        `----'    `--'      `--'  `--`--' .-'  /     
+
+
+
+
+
+>> Enter the `N` to continue, `Q` to quit
+*** please enter `Q` or `N`
+N
+>>> Next Number is: 21
+
+>> Enter the `N` to continue, `Q` to quit
+N
+>>> Next Number is: 27
+
+>> Enter the `N` to continue, `Q` to quit
+N
+>>> Next Number is: 22
+N
+
+>> Enter the `N` to continue, `Q` to quit
+N
+>>> Next Number is: 18
+
+>> Enter the `N` to continue, `Q` to quit
+n
+>>> Next Number is: 2
+
+>> Enter the `N` to continue, `Q` to quit
+N
+>>> Next Number is: 12
+
+>> Enter the `N` to continue, `Q` to quit
+N
+>>> Next Number is: 15
+
+>> Enter the `N` to continue, `Q` to quit
+N
+>>> Next Number is: 28
+We have a Winner : Player#2 has won 'Early Five' winning combination.
+
+>> Enter the `N` to continue, `Q` to quit
+Q
+**** Game Over ****
+
+======================
+	 Summary:
+Player#1 : Nothing
+Player#2 : [Early Five]
+======================
+
